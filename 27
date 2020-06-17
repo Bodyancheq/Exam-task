@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int K,k7,nk7,M,x,i;
+	bool cycle = 1;
+	k7 = 0; nk7 = 0; M = 0; i = 0;
+	while (cycle == 1) {
+		cin >> x;
+		if (x == 0) break;
+		else
+			i++;
+			if ((x % 7 == 0) and (x % 49 != 0) and (nk7 != 0)) {
+				if (x*nk7 > M) M = x * nk7;
+			}
+			if ((x % 7 != 0) and (k7 > 0)) {
+				if (x*k7 > M) M = x * k7;
+			}
+			if ((x % 7 == 0) and (x % 49 != 0) and (x > k7)) k7 = x;
+			if ((x % 7 != 0) and (x > nk7)) nk7 = x;
+
+	}
+	if (M == 0) M = 1;
+	cin >> K;
+	cout << "Total numbers: " << i << endl;
+	cout << "Expectational number: " << K << endl;
+	cout << "Calculated number: " << M << endl;
+	if (M == K) cout << "Numbers match" << endl;
+	else cout << "Numbers dont match";
+
+}
