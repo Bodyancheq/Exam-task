@@ -18,6 +18,4 @@ Calculated number: 63
 Numbers dont match
 
 The program uses BREAK keyword. The point of my program is to find the highest number that is divisible by  7 and not by 49 and to find
-the highest nubmer that is not divisible by 7. The number is divisible by 49 when the are at least two numbers that are divisible by 7
-or 1 that is divisible by 49. On each iteration I will match my current number with max number from previous iterations and compare it 
-to my multiplication that is stored in variable M.
+the highest nubmer that is not divisible by 7. The multiplication is divisible by 49 when the are at least two numbers that are divisible by 7 or 1 that is divisible by 49. On each iteration I will match my current number with max number from previous iterations and compare it to my multiplication that is stored in variable M.
