@@ -24,7 +24,7 @@ int main()
 	if (M == 0) M = 1;
 	cin >> K;
 	cout << "Total numbers: " << i << endl;
-	cout << "Expectational number: " << K << endl;
+	cout << "Expected number: " << K << endl;
 	cout << "Calculated number: " << M << endl;
 	if (M == K) cout << "Numbers match" << endl;
 	else cout << "Numbers dont match";
